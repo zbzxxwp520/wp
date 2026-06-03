@@ -1,0 +1,309 @@
+/* =============================================
+   ROOT & RESET
+   ============================================= */
+:root {
+  --ink:       #1a1a1a;
+  --muted:     #555;
+  --light:     #f5f3ee;
+  --white:     #ffffff;
+  --accent:    #7a3b2e;       /* deep terracotta — swap freely */
+  --border:    #ddd8d0;
+  --nav-h:     60px;
+  --max-w:     860px;
+  --font-serif: 'EB Garamond', Georgia, serif;
+  --font-sans:  'DM Sans', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* =============================================
+   NAV
+   ============================================= */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+
+.nav-name a {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--ink);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+nav ul a {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  text-transform: uppercase;
+  transition: color 0.15s;
+}
+
+nav ul a:hover,
+nav ul a.active {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+/* =============================================
+   HOME LAYOUT
+   ============================================= */
+.home-layout {
+  max-width: var(--max-w);
+  margin: 4rem auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 3rem;
+  align-items: start;
+  flex: 1;
+}
+
+.photo-placeholder {
+  width: 200px;
+  height: 250px;
+  background: var(--light);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+}
+
+/* replace placeholder with real image: */
+/* .home-photo img { width: 200px; display: block; border: 1px solid var(--border); } */
+
+.home-bio h1 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+
+.title-line {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.title-line span { color: var(--ink); font-weight: 500; }
+
+.home-bio p {
+  margin-bottom: 1rem;
+  font-size: 0.97rem;
+  color: #333;
+}
+
+.contact-block {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+.contact-block p { margin-bottom: 0.5rem; }
+
+.links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.links-row a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.25rem 0.75rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.links-row a:hover {
+  background: var(--accent);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* =============================================
+   INNER PAGES (CV / Research)
+   ============================================= */
+.page-content {
+  max-width: var(--max-w);
+  margin: 3.5rem auto;
+  padding: 0 2rem;
+  flex: 1;
+}
+
+.page-content h2 {
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Section headers inside pages */
+.page-content h3 {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2.5rem 0 1rem;
+}
+
+/* ---- Paper / Item cards ---- */
+.paper-list { list-style: none; }
+
+.paper-item {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.paper-item:first-child { border-top: 1px solid var(--border); }
+
+.paper-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.paper-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.paper-meta .venue { font-style: italic; }
+
+.paper-meta .status { color: var(--accent); }
+
+.paper-abstract {
+  font-size: 0.88rem;
+  color: #444;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.paper-abstract.open { display: block; }
+
+.paper-links { margin-top: 0.5rem; }
+
+.paper-links a, .btn-abstract {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.15rem 0.6rem;
+  margin-right: 0.4rem;
+  cursor: pointer;
+  background: none;
+  font-family: var(--font-sans);
+  transition: background 0.15s, color 0.15s;
+  display: inline-block;
+}
+
+.paper-links a:hover, .btn-abstract:hover {
+  background: var(--accent);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* ---- CV table style ---- */
+.cv-block {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 0.3rem 1.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.92rem;
+}
+
+.cv-year { color: var(--muted); padding-top: 0.05rem; }
+
+.cv-inst { font-weight: 500; color: var(--ink); }
+.cv-detail { color: #333; }
+.cv-place { color: var(--muted); font-size: 0.88rem; }
+
+/* ---- Footer ---- */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+  padding: 2rem;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 680px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+  }
+
+  .photo-placeholder { width: 140px; height: 170px; }
+
+  nav ul { display: none; flex-direction: column; position: absolute;
+    top: var(--nav-h); left: 0; right: 0; background: var(--white);
+    border-bottom: 1px solid var(--border); padding: 1rem 2rem; gap: 0.75rem; }
+  nav ul.open { display: flex; }
+  .menu-toggle { display: block; }
+
+  .cv-block { grid-template-columns: 80px 1fr; }
+}

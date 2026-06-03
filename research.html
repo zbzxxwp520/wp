@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research | Pan Wang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-name"><a href="index.html">Pan Wang</a></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+    </ul>
+    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <main class="page-content">
+    <h2>Research</h2>
+
+    <h3>Working Papers</h3>
+    <ul class="paper-list">
+      <li class="paper-item">
+        <span class="paper-title">Permanent Income Shocks and Suicidal Ideation: Evidence from South Korea</span>
+        <div class="paper-meta"><span class="venue">Economics and Human Biology</span> &middot; <span class="status">Revise &amp; Resubmit</span></div>
+        <div class="paper-links">
+          <button class="btn-abstract" onclick="toggleAbstract(this)">Abstract</button>
+        </div>
+        <div class="paper-abstract">
+          Who falls into suicidal ideation when income drops? Drawing on the Korea Welfare Panel Study covering 2011 to 2023 and decomposing income into permanent and transitory components, we find the answer is highly concentrated. Transitory income fluctuations leave ideation almost unchanged, while permanent declines transmit strongly and durably, extending the permanent income logic to mental health. Households suffering persistent income declines and renters or the initially poor bear nearly all of the cost: renters carry a gradient roughly five times that of homeowners, and the initially poor several times that of the better-off. Material hardship and depressive symptoms together absorb almost the entirety of the income-ideation link. Administrative regional records on suicide deaths reproduce the negative income gradient and reveal a pooled male mortality response about six times the female one, even though ideation itself is more prevalent in women, a layered cognition-behaviour pattern with sex-symmetric thoughts but male-predominant lethality. Income predicts alcohol use only among the employed, ruling out classical self-medication and pointing instead to workplace social-drinking exposure. Together the results identify housing tenure and initial deprivation as the pressure points along which the income-mental-health gradient bites, and where social protection has the largest scope to act.
+          <br><br>
+          <em>Keywords: Suicidal ideation, Permanent income, Mental health, Korea Welfare Panel Study, Material hardship, Housing tenure</em>
+          <br>
+          <em>JEL classification: I12, I14, I32, D31</em>
+        </div>
+      </li>
+      <li class="paper-item">
+        <span class="paper-title">Survival Pessimism and Wealth Accumulation: Causal Evidence from Korean War Cohorts</span>
+        <div class="paper-meta"><span class="venue">Journal of Economic Behavior and Organization</span> &middot; <span class="status">Under Review</span></div>
+      </li>
+      <li class="paper-item">
+        <span class="paper-title">Survival Pessimism and Preventive Healthcare Investment: Causal Evidence from Korean War Cohorts</span>
+        <div class="paper-meta"><span class="venue">Health Economics</span> &middot; <span class="status">Under Review</span></div>
+      </li>
+      <li class="paper-item">
+        <span class="paper-title">Childhood Shocks, Belief Formation, and Long-Run Subjective Wellbeing: Evidence from Korea</span>
+        <div class="paper-meta"><span class="venue">Journal of Population Economics</span> &middot; <span class="status">Under Review</span></div>
+      </li>
+      <li class="paper-item">
+        <span class="paper-title">Childhood Victimization and Adult Mental Health, Education, and Marriage Outcomes: Evidence from Korea</span>
+        <div class="paper-meta"><span class="venue">Journal of Population Economics</span> &middot; <span class="status">Under Review</span></div>
+      </li>
+      <li class="paper-item">
+        <span class="paper-title">Targeting, Receipt, and Tax-Burden Salience: Evidence from Korea&rsquo;s EITC</span>
+        <div class="paper-meta"><span class="venue">International Tax and Public Finance</span> &middot; <span class="status">Under Review</span></div>
+      </li>
+      <li class="paper-item">
+        <span class="paper-title">Income Shocks, Marital Dissolution, and Suicidal Ideation: Evidence from South Korea</span>
+        <div class="paper-meta"><span class="venue">Review of Economics of the Household</span> &middot; <span class="status">Under Review</span></div>
+      </li>
+      <li class="paper-item">
+        <span class="paper-title">Whose Hours? Heterogeneous Welfare Effects of Working-Time Regulation Reform: Evidence from Korea</span>
+        <div class="paper-meta"><span class="venue">Labour Economics</span> &middot; <span class="status">Under Review</span></div>
+      </li>
+      <li class="paper-item">
+        <span class="paper-title">Industry Shocks, Main-Job Exit, and Forced Self-Employment: Evidence from Korea</span>
+        <div class="paper-meta"><span class="venue">The Journal of the Economics of Ageing</span> &middot; <span class="status">Under Review</span></div>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pan Wang</p>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    function toggleAbstract(btn) {
+      const abstract = btn.closest('.paper-item').querySelector('.paper-abstract');
+      abstract.classList.toggle('open');
+      btn.textContent = abstract.classList.contains('open') ? 'Hide Abstract' : 'Abstract';
+    }
+  </script>
+</body>
+</html>
