@@ -44,10 +44,12 @@ nav {
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0 2rem;
   gap: 1rem;
 }
+
+.nav-name { margin-right: auto; }
 
 .nav-name a {
   font-family: var(--font-serif);
@@ -86,6 +88,26 @@ nav ul a.active {
   cursor: pointer;
   color: var(--ink);
 }
+
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  padding: 0.2rem 0.65rem;
+  cursor: pointer;
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s;
+}
+.lang-toggle:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ===== Bilingual show/hide ===== */
+body.lang-en .zh { display: none !important; }
+body.lang-zh .en { display: none !important; }
+.lang-zh .venue { font-style: normal; }
 
 /* =============================================
    HOME LAYOUT

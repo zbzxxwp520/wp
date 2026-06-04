@@ -11,15 +11,16 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="lang-en">
 
   <nav>
     <div class="nav-name"><a href="index.html">Pan Wang</a></div>
     <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="research.html">Research</a></li>
+      <li><a href="index.html" class="active"><span class="en">Home</span><span class="zh">主页</span></a></li>
+      <li><a href="cv.html"><span class="en">CV</span><span class="zh">简历</span></a></li>
+      <li><a href="research.html"><span class="en">Research</span><span class="zh">研究</span></a></li>
     </ul>
+    <button class="lang-toggle" onclick="toggleLang()">中文</button>
     <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
   </nav>
 
@@ -30,25 +31,38 @@
 
     <div class="home-bio">
       <h1>Pan Wang</h1>
-      <p class="title-line">PhD Candidate<br>
-        <span>College of Economics and Finance</span><br>
-        <span>Hanyang University</span>
+      <p class="title-line">
+        <span class="en">PhD Candidate</span><span class="zh">博士研究生</span><br>
+        <span><span class="en">College of Economics and Finance</span><span class="zh">经济与金融学院</span></span><br>
+        <span><span class="en">Hanyang University</span><span class="zh">汉阳大学</span></span>
       </p>
 
-      <p>
+      <p class="en">
         I am a PhD candidate in the College of Economics and Finance at Hanyang University.
       </p>
-      <p>
+      <p class="zh">
+        我是汉阳大学经济与金融学院的博士研究生。
+      </p>
+
+      <p class="en">
         I am an applied microeconomist with research interests spanning public and labor economics.
         My work uses Korean microdata and causal inference methods to study how taxation, social
         policy, and life-course shocks shape the health, labor supply, and well-being of households.
       </p>
-      <p>
+      <p class="zh">
+        我是一名应用微观经济学者,研究兴趣涵盖公共经济学与劳动经济学。我利用韩国微观数据与因果推断方法,
+        研究税收、社会政策以及生命历程中的各类冲击如何影响家庭的健康、劳动供给与福祉。
+      </p>
+
+      <p class="en">
         My fields are public economics, taxation, labor economics, health economics, and family economics.
+      </p>
+      <p class="zh">
+        我的研究领域包括公共经济学、税收、劳动经济学、健康经济学与家庭经济学。
       </p>
 
       <div class="contact-block">
-        <p><strong>Contact</strong></p>
+        <p><strong><span class="en">Contact</span><span class="zh">联系方式</span></strong></p>
         <p>wangpan&#91;at&#93;hanyang&#91;dot&#93;ac&#91;dot&#93;kr</p>
       </div>
     </div>
