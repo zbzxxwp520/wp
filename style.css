@@ -104,6 +104,11 @@ nav ul a.active {
 }
 .lang-toggle:hover { color: var(--accent); border-color: var(--accent); }
 
+/* ===== Home page with appended CV section ===== */
+.home-main { flex: 1; }
+.home-main .home-layout { flex: none; margin-bottom: 1.5rem; }
+.home-main .page-content { margin-top: 0; }
+
 /* ===== Bilingual show/hide ===== */
 body.lang-en .zh { display: none !important; }
 body.lang-zh .en { display: none !important; }
