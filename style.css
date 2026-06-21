@@ -259,6 +259,16 @@ body.lang-zh .en { display: none !important; }
 
 .paper-meta .status { color: var(--accent); }
 
+/* Publication entry with journal cover on the left */
+.paper-item.pub .pub-row { display: flex; gap: 1.2rem; align-items: stretch; }
+.pub-cover { flex: 0 0 84px; width: 84px; }
+.pub-cover img { width: 100%; height: 100%; object-fit: cover; display: block; border: 1px solid var(--border); }
+.pub-body { flex: 1 1 auto; min-width: 0; }
+@media (max-width: 680px) {
+  .paper-item.pub .pub-row { gap: 0.9rem; }
+  .pub-cover { flex-basis: 66px; width: 66px; }
+}
+
 .paper-abstract {
   font-size: 0.88rem;
   color: #444;
