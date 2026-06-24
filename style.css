@@ -285,13 +285,18 @@ body.lang-zh .en { display: none !important; }
   font-weight: 500;
   color: var(--accent);
   border: 1px solid var(--accent);
-  padding: 0.15rem 0.6rem;
+  padding: 0.25rem 0.6rem;
   margin-right: 0.4rem;
   cursor: pointer;
   background: none;
   font-family: var(--font-sans);
   transition: background 0.15s, color 0.15s;
   display: inline-block;
+  box-sizing: border-box;
+  min-width: 8.5rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
 }
 
 .paper-links a:hover, .btn-abstract:hover {
