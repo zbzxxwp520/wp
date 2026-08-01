@@ -220,7 +220,7 @@ body.lang-zh .en { display: none !important; }
 }
 
 /* Section headers inside pages */
-.page-content h3 {
+.page-content h3, .home-bio h3 {
   font-family: var(--font-sans);
   font-size: 0.75rem;
   font-weight: 500;
@@ -229,6 +229,7 @@ body.lang-zh .en { display: none !important; }
   color: var(--accent);
   margin: 2.5rem 0 1rem;
 }
+.home-bio h3 { margin: 1.6rem 0 0.5rem; }
 
 /* ---- Paper / Item cards ---- */
 .paper-list { list-style: none; }
