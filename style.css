@@ -115,11 +115,13 @@ nav ul a.active {
 .home-main .home-layout { flex: none; margin-bottom: 1.5rem; }
 .home-main .page-content { margin-top: 0; }
 
-/* ===== Trilingual show/hide ===== */
-body.lang-en .zh, body.lang-en .ko { display: none !important; }
-body.lang-zh .en, body.lang-zh .ko { display: none !important; }
-body.lang-ko .en, body.lang-ko .zh { display: none !important; }
-.lang-zh .venue, .lang-ko .venue { font-style: normal; }
+/* ===== Multilingual show/hide (EN / ZH-Hans / ZH-Hant / KO / JA) ===== */
+body.lang-en .zh, body.lang-en .tw, body.lang-en .ko, body.lang-en .ja { display: none !important; }
+body.lang-zh .en, body.lang-zh .tw, body.lang-zh .ko, body.lang-zh .ja { display: none !important; }
+body.lang-tw .en, body.lang-tw .zh, body.lang-tw .ko, body.lang-tw .ja { display: none !important; }
+body.lang-ko .en, body.lang-ko .zh, body.lang-ko .tw, body.lang-ko .ja { display: none !important; }
+body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display: none !important; }
+.lang-zh .venue, .lang-tw .venue, .lang-ko .venue, .lang-ja .venue { font-style: normal; }
 
 /* =============================================
    HOME LAYOUT

@@ -1,8 +1,12 @@
 var ABSTRACT_LABELS = {
-  en: { show: 'Abstract',  hide: 'Hide Abstract' },
-  zh: { show: '摘要',      hide: '收起摘要' },
-  ko: { show: '초록',      hide: '초록 닫기' }
+  en: { show: 'Abstract', hide: 'Hide Abstract' },
+  zh: { show: '摘要',     hide: '收起摘要' },
+  tw: { show: '摘要',     hide: '隱藏摘要' },
+  ko: { show: '초록',     hide: '초록 닫기' },
+  ja: { show: '要旨',     hide: '要旨を閉じる' }
 };
+
+var LANGS = ['en', 'zh', 'tw', 'ko', 'ja'];
 
 document.addEventListener('DOMContentLoaded', function () {
   // Mobile menu toggle
@@ -18,13 +22,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function currentLang() {
-  if (document.body.classList.contains('lang-zh')) return 'zh';
-  if (document.body.classList.contains('lang-ko')) return 'ko';
+  for (var i = 0; i < LANGS.length; i++) {
+    if (document.body.classList.contains('lang-' + LANGS[i])) return LANGS[i];
+  }
   return 'en';
 }
 
 function setLang(lang) {
-  document.body.classList.remove('lang-en', 'lang-zh', 'lang-ko');
+  LANGS.forEach(function (l) { document.body.classList.remove('lang-' + l); });
   document.body.classList.add('lang-' + lang);
   localStorage.setItem('lang', lang);
 
