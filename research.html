@@ -15,28 +15,32 @@
   <nav>
     <div class="nav-name"><a href="index.html">Pan Wang</a></div>
     <ul>
-      <li><a href="index.html"><span class="en">Home</span><span class="zh">主页</span></a></li>
-      <li><a href="research.html" class="active"><span class="en">Research</span><span class="zh">研究</span></a></li>
+      <li><a href="index.html"><span class="en">Home</span><span class="zh">主页</span><span class="ko">홈</span></a></li>
+      <li><a href="research.html" class="active"><span class="en">Research</span><span class="zh">研究</span><span class="ko">연구</span></a></li>
     </ul>
-    <button class="lang-toggle" onclick="toggleLang()">中文</button>
+    <div class="lang-switch">
+      <button data-lang="en" onclick="setLang('en')">EN</button>
+      <button data-lang="zh" onclick="setLang('zh')">中</button>
+      <button data-lang="ko" onclick="setLang('ko')">한</button>
+    </div>
     <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
   </nav>
 
   <main class="page-content">
-    <h2><span class="en">Research</span><span class="zh">研究</span></h2>
+    <h2><span class="en">Research</span><span class="zh">研究</span><span class="ko">연구</span></h2>
 
-    <h3><span class="en">Publications</span><span class="zh">出版物</span></h3>
+    <h3><span class="en">Publications</span><span class="zh">出版物</span><span class="ko">출판물</span></h3>
     <ul class="paper-list">
 
       <li class="paper-item pub">
         <div class="pub-row">
           <div class="pub-cover"><img src="journal_covers/EHB.jpg" alt="Economics and Human Biology"></div>
           <div class="pub-body">
-            <span class="paper-title"><span class="en">Permanent Income Shocks and Suicidal Ideation: Evidence from South Korea</span><span class="zh">永久收入冲击与自杀意念:来自韩国的证据</span></span>
-            <div class="paper-meta"><span class="venue"><span class="en">Economics and Human Biology</span><span class="zh">《经济学与人类生物学》</span></span></div>
+            <span class="paper-title"><span class="en">Permanent Income Shocks and Suicidal Ideation: Evidence from South Korea</span><span class="zh">永久收入冲击与自杀意念:来自韩国的证据</span><span class="ko">영구소득 충격과 자살 생각: 한국의 증거</span></span>
+            <div class="paper-meta"><span class="venue"><span class="en">Economics and Human Biology</span><span class="zh">《经济学与人类生物学》</span><span class="ko">Economics and Human Biology</span></span></div>
             <div class="paper-links">
               <button class="btn-abstract" onclick="toggleAbstract(this)">Abstract</button>
-              <a href="https://doi.org/10.1016/j.ehb.2026.101625" target="_blank" rel="noopener"><span class="en">Paper</span><span class="zh">论文</span></a>
+              <a href="https://doi.org/10.1016/j.ehb.2026.101625" target="_blank" rel="noopener"><span class="en">Paper</span><span class="zh">论文</span><span class="ko">논문</span></a>
             </div>
           </div>
         </div>
@@ -54,6 +58,13 @@
             <em>关键词:自杀意念、永久收入、心理健康、韩国福利面板研究、物质困难、住房产权</em>
             <br>
             <em>JEL 分类:I12, I14, I32, D31</em>
+          </div>
+          <div class="ko">
+            소득이 감소할 때 누가 자살 생각에 빠지는가? 2011년부터 2023년까지의 한국복지패널조사(Korea Welfare Panel Study)를 활용하고 소득을 영구적 요소와 일시적 요소로 분해한 결과, 그 답은 매우 집중되어 있음을 발견한다. 일시적 소득 변동은 자살 생각을 거의 변화시키지 않는 반면, 영구적 소득 감소는 자살 생각의 강하고 지속적인 증가와 연관되어 있어, 영구소득 논리를 정신건강 영역으로 확장한다. 지속적인 소득 감소를 겪는 가구, 그리고 세입자나 초기 빈곤층이 비용의 거의 전부를 부담한다. 세입자의 기울기는 자가 보유자의 약 다섯 배, 초기 빈곤층은 부유층의 여러 배에 달한다. 물질적 어려움과 우울 증상이 함께 소득–자살 생각 연결의 대부분을 흡수한다. 자살 사망에 관한 지역 행정 기록은 음(–)의 소득 기울기를 재현하며, 자살 생각 자체는 여성에게서 더 흔함에도 불구하고 통합 표본에서 남성 사망률 반응이 여성의 약 여섯 배로 나타난다. 이는 생각은 성별 대칭적이지만 치명성은 남성에게 집중되는 층위적 '인지–행동' 패턴이다. 소득–자살 생각 기울기는 문제 음주가 심한 집단에서 뚜렷하게 더 가파르다. 이는 인지 수준에서 양성 모두에게 작용하는 알코올 탈억제 효과인 반면, 자살 생각에서 치명적 행동으로의 이행은 주로 남성에게 집중된다. 종합하면, 연구 결과는 주거 점유 형태와 초기 결핍을 소득–정신건강 기울기가 작동하는 압력 지점이자 사회적 보호가 가장 크게 작용할 수 있는 지점으로 식별한다.
+            <br><br>
+            <em>키워드: 자살 생각, 영구소득, 정신건강, 한국복지패널조사, 물질적 어려움, 주거 점유 형태</em>
+            <br>
+            <em>JEL 분류: I12, I14, I32, D31</em>
           </div>
         </div>
       </li>

@@ -89,30 +89,37 @@ nav ul a.active {
   color: var(--ink);
 }
 
-.lang-toggle {
-  background: none;
+.lang-switch {
+  display: flex;
   border: 1px solid var(--border);
-  color: var(--muted);
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  letter-spacing: 0.03em;
-  padding: 0.2rem 0.65rem;
-  cursor: pointer;
-  border-radius: 2px;
-  white-space: nowrap;
-  transition: color 0.15s, border-color 0.15s;
+  border-radius: 3px;
+  overflow: hidden;
 }
-.lang-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.lang-switch button {
+  background: none;
+  border: none;
+  border-right: 1px solid var(--border);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+  padding: 0.25rem 0.5rem;
+  transition: background 0.15s, color 0.15s;
+}
+.lang-switch button:last-child { border-right: none; }
+.lang-switch button.active { background: var(--accent); color: #fff; }
+.lang-switch button:hover:not(.active) { color: var(--accent); }
 
 /* ===== Home page with appended CV section ===== */
 .home-main { flex: 1; }
 .home-main .home-layout { flex: none; margin-bottom: 1.5rem; }
 .home-main .page-content { margin-top: 0; }
 
-/* ===== Bilingual show/hide ===== */
-body.lang-en .zh { display: none !important; }
-body.lang-zh .en { display: none !important; }
-.lang-zh .venue { font-style: normal; }
+/* ===== Trilingual show/hide ===== */
+body.lang-en .zh, body.lang-en .ko { display: none !important; }
+body.lang-zh .en, body.lang-zh .ko { display: none !important; }
+body.lang-ko .en, body.lang-ko .zh { display: none !important; }
+.lang-zh .venue, .lang-ko .venue { font-style: normal; }
 
 /* =============================================
    HOME LAYOUT

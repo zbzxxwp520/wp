@@ -18,10 +18,14 @@
   <nav>
     <div class="nav-name"><a href="index.html">Pan Wang</a></div>
     <ul>
-      <li><a href="index.html" class="active"><span class="en">Home</span><span class="zh">主页</span></a></li>
-      <li><a href="research.html"><span class="en">Research</span><span class="zh">研究</span></a></li>
+      <li><a href="index.html" class="active"><span class="en">Home</span><span class="zh">主页</span><span class="ko">홈</span></a></li>
+      <li><a href="research.html"><span class="en">Research</span><span class="zh">研究</span><span class="ko">연구</span></a></li>
     </ul>
-    <button class="lang-toggle" onclick="toggleLang()">中文</button>
+    <div class="lang-switch">
+      <button data-lang="en" onclick="setLang('en')">EN</button>
+      <button data-lang="zh" onclick="setLang('zh')">中</button>
+      <button data-lang="ko" onclick="setLang('ko')">한</button>
+    </div>
     <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
   </nav>
 
@@ -34,9 +38,9 @@
       <div class="home-bio">
         <h1>Pan Wang</h1>
         <p class="title-line">
-          <span class="en">PhD Candidate</span><span class="zh">博士研究生</span><br>
-          <span><span class="en">College of Economics and Finance</span><span class="zh">经济与金融学院</span></span><br>
-          <span><span class="en">Hanyang University</span><span class="zh">汉阳大学</span></span>
+          <span class="en">PhD Candidate</span><span class="zh">博士研究生</span><span class="ko">박사과정</span><br>
+          <span><span class="en">College of Economics and Finance</span><span class="zh">经济与金融学院</span><span class="ko">경제금융대학</span></span><br>
+          <span><span class="en">Hanyang University</span><span class="zh">汉阳大学</span><span class="ko">한양대학교</span></span>
         </p>
 
         <p class="en">
@@ -45,44 +49,48 @@
         <p class="zh">
           我是汉阳大学经济与金融学院的博士研究生。
         </p>
+        <p class="ko">
+          저는 한양대학교 경제금융대학 박사과정생입니다.
+        </p>
 
-        <h3><span class="en">Research Areas</span><span class="zh">研究领域</span></h3>
+        <h3><span class="en">Research Areas</span><span class="zh">研究领域</span><span class="ko">연구 분야</span></h3>
         <p>
           <span class="en">Public economics &middot; Labor economics &middot; Health economics<br>Family economics &middot; Energy economics &middot; Financial economics</span>
           <span class="zh">公共经济学 &middot; 劳动经济学 &middot; 健康经济学 &middot; 家庭经济学 &middot; 能源经济学 &middot; 金融经济学</span>
+          <span class="ko">공공경제학 &middot; 노동경제학 &middot; 보건경제학<br>가족경제학 &middot; 에너지경제학 &middot; 금융경제학</span>
         </p>
       </div>
     </div>
 
     <div class="page-content">
-      <h3><span class="en">Education</span><span class="zh">教育背景</span></h3>
+      <h3><span class="en">Education</span><span class="zh">教育背景</span><span class="ko">학력</span></h3>
       <div class="cv-block">
-        <div class="cv-year"><span class="en">2023 &ndash; present</span><span class="zh">2023 至今</span></div>
+        <div class="cv-year"><span class="en">2023 &ndash; present</span><span class="zh">2023 至今</span><span class="ko">2023 &ndash; 현재</span></div>
         <div>
-          <div class="cv-inst"><span class="en">Hanyang University</span><span class="zh">汉阳大学</span></div>
-          <div class="cv-detail"><span class="en">Ph.D. Candidate, College of Economics and Finance</span><span class="zh">博士研究生,经济与金融学院</span></div>
-          <div class="cv-place"><span class="en">Seoul, Republic of Korea</span><span class="zh">韩国首尔</span></div>
+          <div class="cv-inst"><span class="en">Hanyang University</span><span class="zh">汉阳大学</span><span class="ko">한양대학교</span></div>
+          <div class="cv-detail"><span class="en">Ph.D. Candidate, College of Economics and Finance</span><span class="zh">博士研究生,经济与金融学院</span><span class="ko">박사과정, 경제금융대학</span></div>
+          <div class="cv-place"><span class="en">Seoul, Republic of Korea</span><span class="zh">韩国首尔</span><span class="ko">대한민국 서울</span></div>
         </div>
       </div>
       <div class="cv-block">
-        <div class="cv-year"><span class="en">2021 &ndash; 2023</span><span class="zh">2021 &ndash; 2023</span></div>
+        <div class="cv-year"><span class="en">2021 &ndash; 2023</span><span class="zh">2021 &ndash; 2023</span><span class="ko">2021 &ndash; 2023</span></div>
         <div>
-          <div class="cv-inst"><span class="en">Hanyang University</span><span class="zh">汉阳大学</span></div>
-          <div class="cv-detail"><span class="en">Master of Science</span><span class="zh">理学硕士</span></div>
-          <div class="cv-place"><span class="en">Seoul, Republic of Korea</span><span class="zh">韩国首尔</span></div>
+          <div class="cv-inst"><span class="en">Hanyang University</span><span class="zh">汉阳大学</span><span class="ko">한양대학교</span></div>
+          <div class="cv-detail"><span class="en">Master of Science</span><span class="zh">理学硕士</span><span class="ko">이학석사</span></div>
+          <div class="cv-place"><span class="en">Seoul, Republic of Korea</span><span class="zh">韩国首尔</span><span class="ko">대한민국 서울</span></div>
         </div>
       </div>
       <div class="cv-block">
-        <div class="cv-year"><span class="en">2017 &ndash; 2021</span><span class="zh">2017 &ndash; 2021</span></div>
+        <div class="cv-year"><span class="en">2017 &ndash; 2021</span><span class="zh">2017 &ndash; 2021</span><span class="ko">2017 &ndash; 2021</span></div>
         <div>
-          <div class="cv-inst"><span class="en">Sungkyunkwan University</span><span class="zh">成均馆大学</span></div>
-          <div class="cv-detail"><span class="en">Bachelor of Economics</span><span class="zh">经济学学士</span></div>
-          <div class="cv-place"><span class="en">Seoul, Republic of Korea</span><span class="zh">韩国首尔</span></div>
+          <div class="cv-inst"><span class="en">Sungkyunkwan University</span><span class="zh">成均馆大学</span><span class="ko">성균관대학교</span></div>
+          <div class="cv-detail"><span class="en">Bachelor of Economics</span><span class="zh">经济学学士</span><span class="ko">경제학사</span></div>
+          <div class="cv-place"><span class="en">Seoul, Republic of Korea</span><span class="zh">韩国首尔</span><span class="ko">대한민국 서울</span></div>
         </div>
       </div>
 
       <div class="contact-block">
-        <p><strong><span class="en">Email</span><span class="zh">电子邮箱</span></strong></p>
+        <p><strong><span class="en">Email</span><span class="zh">电子邮箱</span><span class="ko">이메일</span></strong></p>
         <p>wangpan&#91;at&#93;hanyang&#91;dot&#93;ac&#91;dot&#93;kr</p>
       </div>
     </div>
