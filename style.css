@@ -328,6 +328,19 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
 .cv-detail { color: #333; }
 .cv-place { color: var(--muted); font-size: 0.88rem; }
 
+/* Two parallel columns (Education | Experience) */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2.5rem;
+  margin-top: 1.5rem;
+}
+.two-col h3 { margin-top: 0; }
+@media (max-width: 680px) {
+  .two-col { grid-template-columns: 1fr; gap: 0; }
+  .two-col h3 { margin-top: 1.6rem; }
+}
+
 /* ---- Footer ---- */
 footer {
   text-align: center;
