@@ -270,17 +270,23 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
 .paper-meta .status { color: var(--accent); }
 
 /* Publication entry with journal cover on the left */
+.paper-item.pub { position: relative; }
 .paper-item.pub .pub-row { display: flex; gap: 1.2rem; align-items: stretch; }
 .pub-date {
-  flex: 0 0 auto;
-  align-self: center;
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  font-style: italic;
+  position: absolute;
+  top: 1.3rem;
+  left: -6.5rem;
+  width: 5.5rem;
+  text-align: right;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
   font-weight: 500;
-  color: var(--accent);
-  letter-spacing: 0.04em;
+  color: var(--muted);
+  letter-spacing: 0.05em;
   white-space: nowrap;
+}
+@media (max-width: 1240px) {
+  .pub-date { position: static; width: auto; text-align: left; align-self: center; }
 }
 .pub-cover { flex: 0 0 84px; width: 84px; }
 .pub-cover img { width: 100%; height: 100%; object-fit: cover; display: block; border: 1px solid var(--border); }
