@@ -250,8 +250,13 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
 
 .paper-item:first-child { border-top: 1px solid var(--border); }
 
-.wp-row { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
-.wp-row .paper-title { margin-bottom: 0; }
+.paper-title .status {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--accent);
+  white-space: nowrap;
+}
 
 .paper-title {
   font-family: var(--font-serif);
