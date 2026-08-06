@@ -113,8 +113,9 @@ nav ul a.active {
 /* ===== CV placeholder ===== */
 .cv-wait { display: flex; align-items: center; justify-content: center; min-height: 55vh; }
 .coming-soon {
-  font-family: var(--font-serif);
-  font-size: 1.7rem;
+  font-family: 'Lora', serif;
+  font-size: 1.8rem;
+  font-weight: 500;
   color: var(--muted);
   text-align: center;
 }
