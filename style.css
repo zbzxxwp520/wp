@@ -110,6 +110,15 @@ nav ul a.active {
 .lang-switch button.active { background: var(--accent); color: #fff; }
 .lang-switch button:hover:not(.active) { color: var(--accent); }
 
+/* ===== CV placeholder ===== */
+.cv-wait { display: flex; align-items: center; justify-content: center; min-height: 55vh; }
+.coming-soon {
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  color: var(--muted);
+  text-align: center;
+}
+
 /* ===== Home page with appended CV section ===== */
 .home-main { flex: 1; }
 .home-main .home-layout { flex: none; margin-bottom: 1.5rem; }
