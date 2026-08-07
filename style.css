@@ -363,7 +363,7 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
 
 .paper-links { margin-top: 0.5rem; }
 
-.paper-links a, .btn-abstract {
+.paper-links a, .btn-abstract, .btn-question {
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--accent);
@@ -380,10 +380,27 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
   line-height: 1.5;
 }
 
-.paper-links a:hover, .btn-abstract:hover {
+.paper-links a:hover, .btn-abstract:hover, .btn-question:hover {
   background: var(--accent);
   color: var(--white);
   text-decoration: none;
+}
+
+.paper-question { display: none; margin-top: 0.7rem; }
+.paper-question.open { display: block; }
+.paper-question img {
+  display: block;
+  max-width: 520px;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+.paper-question p {
+  margin-top: 0.6rem;
+  font-size: 0.92rem;
+  color: #444;
+  max-width: 520px;
 }
 
 /* ---- CV table style ---- */

@@ -51,3 +51,8 @@ function toggleAbstract(btn) {
   const lang = currentLang();
   btn.textContent = open ? ABSTRACT_LABELS[lang].hide : ABSTRACT_LABELS[lang].show;
 }
+
+function toggleQuestion(btn) {
+  const q = btn.closest('.paper-item').querySelector('.paper-question');
+  if (q) q.classList.toggle('open');
+}
