@@ -1,0 +1,9 @@
+# Local-only LaTeX CV (not deployed to GitHub Pages)
+*.tex
+*.pdf
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
