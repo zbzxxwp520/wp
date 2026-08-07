@@ -110,14 +110,34 @@ nav ul a.active {
 .lang-switch button.active { background: var(--accent); color: #fff; }
 .lang-switch button:hover:not(.active) { color: var(--accent); }
 
-/* ===== CV placeholder ===== */
-.cv-wait { display: flex; align-items: center; justify-content: center; min-height: 55vh; }
-.coming-soon {
-  font-family: 'Gentium Basic', serif;
-  font-size: 1.9rem;
-  font-weight: 400;
-  color: var(--muted);
-  text-align: center;
+/* ===== CV page (download + embedded PDF) ===== */
+.cv-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.cv-head h2 { margin-bottom: 0; }
+.cv-download {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.5rem 1.1rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+.cv-download:hover { background: #fff; color: var(--accent); text-decoration: none; }
+.cv-frame { margin-top: 1.6rem; }
+.cv-frame iframe {
+  width: 100%;
+  height: 88vh;
+  border: 1px solid var(--border);
+  border-radius: 3px;
 }
 
 /* ===== Home page with appended CV section ===== */

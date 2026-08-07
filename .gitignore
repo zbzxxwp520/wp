@@ -1,9 +1,12 @@
-# Local-only LaTeX CV (not deployed to GitHub Pages)
+# Local-only LaTeX CV source (not deployed)
 *.tex
-*.pdf
 *.aux
 *.log
 *.fls
 *.fdb_latexmk
 *.out
 *.synctex.gz
+
+# Ignore all PDFs except the published CV
+*.pdf
+!Pan_Wang_CV.pdf
