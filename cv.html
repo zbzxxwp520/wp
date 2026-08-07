@@ -32,13 +32,18 @@
   <main class="page-content cv-page">
     <div class="cv-head">
       <h2><span class="en">Curriculum Vitae</span><span class="zh">简历</span><span class="tw">履歷</span><span class="ko">이력서</span><span class="ja">履歴書</span></h2>
-      <a class="cv-download" href="Pan_Wang_CV.pdf" download="Pan_Wang_CV.pdf">
-        <span class="en">Download PDF</span><span class="zh">下载 PDF</span><span class="tw">下載 PDF</span><span class="ko">PDF 다운로드</span><span class="ja">PDF ダウンロード</span>
-      </a>
+      <div class="cv-actions">
+        <button class="cv-fs" onclick="cvFullscreen()">
+          <span class="en">Fullscreen</span><span class="zh">全屏</span><span class="tw">全螢幕</span><span class="ko">전체 화면</span><span class="ja">全画面</span>
+        </button>
+        <a class="cv-download" href="Pan_Wang_CV.pdf" download="Pan_Wang_CV.pdf">
+          <span class="en">Download PDF</span><span class="zh">下载 PDF</span><span class="tw">下載 PDF</span><span class="ko">PDF 다운로드</span><span class="ja">PDF ダウンロード</span>
+        </a>
+      </div>
     </div>
 
     <div class="cv-frame">
-      <iframe src="Pan_Wang_CV.pdf#view=FitH" title="Curriculum Vitae — Pan Wang"></iframe>
+      <iframe src="Pan_Wang_CV.pdf#view=FitH" title="Curriculum Vitae — Pan Wang" allowfullscreen></iframe>
     </div>
   </main>
 
@@ -47,6 +52,14 @@
   </footer>
 
   <script src="nav.js"></script>
+  <script>
+    function cvFullscreen() {
+      var f = document.querySelector('.cv-frame iframe');
+      if (!f) return;
+      var req = f.requestFullscreen || f.webkitRequestFullscreen || f.msRequestFullscreen;
+      if (req) req.call(f);
+    }
+  </script>
   <script data-goatcounter="https://wangpan.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </body>

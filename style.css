@@ -120,6 +120,21 @@ nav ul a.active {
   gap: 1rem;
 }
 .cv-head h2 { margin-bottom: 0; }
+.cv-actions { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; }
+.cv-fs {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: none;
+  border: 1px solid var(--accent);
+  padding: 0.5rem 1.1rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.cv-fs:hover { background: var(--accent); color: #fff; }
 .cv-download {
   font-family: var(--font-sans);
   font-size: 0.9rem;
