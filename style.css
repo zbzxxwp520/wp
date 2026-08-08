@@ -587,3 +587,6 @@ body::after { display: none; }
 
 /* ===== tweaks v9: CV vase lower again ===== */
 .cv-frame.vase-anchor::before { top: 80px; }
+
+/* ===== tweaks v10: CV vase visible (was off-screen left) ===== */
+.cv-frame.vase-anchor::before { top: 80px; left: -50px; z-index: 2; }
