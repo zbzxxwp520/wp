@@ -10,3 +10,6 @@
 # Ignore all PDFs except the published CV
 *.pdf
 !Pan_Wang_CV.pdf
+
+# Local-only archives
+*.zip
