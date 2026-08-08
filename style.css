@@ -594,3 +594,8 @@ body::after { display: none; }
 /* ===== tweaks v11: CV vase left5 down20; research vase up3 ===== */
 .cv-frame.vase-anchor::before { top: 100px; left: -55px; }
 .paper-item.vase-anchor::before { top: -5px; }
+
+/* ===== tweaks v12: vase nudge + fix mobile nav above photo ===== */
+.cv-frame.vase-anchor::before { top: 120px; left: -60px; }
+.paper-item.vase-anchor::before { top: -8px; }
+nav { position: sticky; top: 0; z-index: 100; }
