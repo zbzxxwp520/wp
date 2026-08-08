@@ -562,3 +562,8 @@ body::after { bottom: 2vh; top: auto; }
 /* ===== tweaks v4: vase mid height ===== */
 body::after { bottom: 12vh; top: auto; }
 @media (min-width:1300px) { body::after { bottom: 12vh; top: auto; } }
+
+/* ===== tweaks v5: vase scrolls with page (absolute, like the swords) ===== */
+body { position: relative; }
+body::after { position: absolute; top: 78vh; bottom: auto; }
+@media (min-width:1300px) { body::after { position: absolute; top: 76vh; bottom: auto; } }
