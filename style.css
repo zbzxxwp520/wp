@@ -590,3 +590,7 @@ body::after { display: none; }
 
 /* ===== tweaks v10: CV vase visible (was off-screen left) ===== */
 .cv-frame.vase-anchor::before { top: 80px; left: -50px; z-index: 2; }
+
+/* ===== tweaks v11: CV vase left5 down20; research vase up3 ===== */
+.cv-frame.vase-anchor::before { top: 100px; left: -55px; }
+.paper-item.vase-anchor::before { top: -5px; }
