@@ -621,3 +621,13 @@ nav { position: sticky; top: 0; z-index: 100; }
 
 /* ===== tweaks v18: CV down 250 ===== */
 .cv-frame.vase-anchor::before { top: 540px; left: -70px; }
+
+/* ===== tweaks v19: CV vase up100; strengthen mobile nav above photo ===== */
+.cv-frame.vase-anchor::before { top: 440px; left: -70px; }
+nav { z-index: 200; }
+nav ul { z-index: 200; }
+@media (max-width: 680px) {
+  nav { z-index: 200; }
+  nav ul, nav ul.open { z-index: 200; background: var(--white); }
+  .home-photo img { width: 150px !important; height: 188px !important; }
+}
