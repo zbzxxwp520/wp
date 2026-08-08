@@ -534,3 +534,23 @@ body::after { left: max(1.2rem, calc((100vw - 1055px) / 2 - 96px)); }
 @media (max-width:680px) {
   .cv-head::after { width:200px; height:38px; bottom:-19px; background-size:200px 38px; }
 }
+
+/* ===== tweaks v2: smaller vase, raised; CV swords to the right of Download ===== */
+body::after {
+  left: max(1.2rem, calc((100vw - 1055px) / 2 - 78px));
+  bottom: 22vh; top: auto; width: 56px; height: 93px;
+}
+@media (min-width:1300px) {
+  body::after {
+    left: max(1.2rem, calc((100vw - 1055px) / 2 - 78px));
+    bottom: 24vh; top: auto; width: 64px; height: 107px;
+  }
+}
+.cv-head::after {
+  right: auto; left: 100%; margin-left: 14px;
+  top: 50%; bottom: auto; transform: translateY(-50%);
+  width: 240px; height: 45px; background-size: 240px 45px;
+}
+@media (max-width:680px) {
+  .cv-head::after { display: none; }
+}
