@@ -581,3 +581,6 @@ body::after { display: none; }
 /* ===== tweaks v7: per-anchor vertical nudge ===== */
 .paper-item.vase-anchor::before { top: -2px; }
 .cv-frame.vase-anchor::before { top: 40px; }
+
+/* ===== tweaks v8: CV vase lower ===== */
+.cv-frame.vase-anchor::before { top: 60px; }
