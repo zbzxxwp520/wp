@@ -584,3 +584,6 @@ body::after { display: none; }
 
 /* ===== tweaks v8: CV vase lower ===== */
 .cv-frame.vase-anchor::before { top: 60px; }
+
+/* ===== tweaks v9: CV vase lower again ===== */
+.cv-frame.vase-anchor::before { top: 80px; }
