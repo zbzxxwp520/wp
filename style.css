@@ -558,3 +558,7 @@ body::after {
 /* ===== tweaks v3: vase back down (not raised) ===== */
 body::after { bottom: 2vh; top: auto; }
 @media (min-width:1300px) { body::after { bottom: 2vh; top: auto; } }
+
+/* ===== tweaks v4: vase mid height ===== */
+body::after { bottom: 12vh; top: auto; }
+@media (min-width:1300px) { body::after { bottom: 12vh; top: auto; } }
