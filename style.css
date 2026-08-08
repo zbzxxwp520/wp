@@ -614,3 +614,7 @@ nav { position: sticky; top: 0; z-index: 100; }
 /* ===== tweaks v16: research up3; CV down50 ===== */
 .paper-item.vase-anchor::before { top: -29px; }
 .cv-frame.vase-anchor::before { top: 190px; left: -70px; }
+
+/* ===== tweaks v17: research up3; CV down100 ===== */
+.paper-item.vase-anchor::before { top: -32px; }
+.cv-frame.vase-anchor::before { top: 290px; left: -70px; }
