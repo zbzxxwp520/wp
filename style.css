@@ -577,3 +577,7 @@ body::after { display: none; }
   background-image:url("scholar-vase.png"); background-repeat:no-repeat; background-size:contain;
 }
 @media (max-width:680px) { .vase-anchor::before { display:none; } }
+
+/* ===== tweaks v7: per-anchor vertical nudge ===== */
+.paper-item.vase-anchor::before { top: -2px; }
+.cv-frame.vase-anchor::before { top: 40px; }
