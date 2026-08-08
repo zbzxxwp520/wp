@@ -607,3 +607,6 @@ nav { position: sticky; top: 0; z-index: 100; }
 /* ===== tweaks v14: CV left5; research up5 ===== */
 .cv-frame.vase-anchor::before { top: 140px; left: -70px; }
 .paper-item.vase-anchor::before { top: -16px; }
+
+/* ===== tweaks v15: research vase up 10px ===== */
+.paper-item.vase-anchor::before { top: -26px; }
