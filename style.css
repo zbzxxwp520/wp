@@ -554,3 +554,7 @@ body::after {
 @media (max-width:680px) {
   .cv-head::after { display: none; }
 }
+
+/* ===== tweaks v3: vase back down (not raised) ===== */
+body::after { bottom: 2vh; top: auto; }
+@media (min-width:1300px) { body::after { bottom: 2vh; top: auto; } }
