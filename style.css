@@ -599,3 +599,7 @@ body::after { display: none; }
 .cv-frame.vase-anchor::before { top: 120px; left: -60px; }
 .paper-item.vase-anchor::before { top: -8px; }
 nav { position: sticky; top: 0; z-index: 100; }
+
+/* ===== tweaks v13: CV left5 down20; research up3 ===== */
+.cv-frame.vase-anchor::before { top: 140px; left: -65px; }
+.paper-item.vase-anchor::before { top: -11px; }
