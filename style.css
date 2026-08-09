@@ -639,3 +639,6 @@ nav ul { z-index: 200; }
 /* ===== research-question image 900px ===== */
 .paper-question img { max-width: 900px; }
 .paper-question p { max-width: 900px; }
+
+/* ===== research-question caption note ===== */
+.paper-question .pq-note { font-size: 0.8rem; font-style: italic; color: var(--muted); margin-top: 0.4rem; }
