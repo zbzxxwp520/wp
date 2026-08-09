@@ -631,3 +631,7 @@ nav ul { z-index: 200; }
   nav ul, nav ul.open { z-index: 200; background: var(--white); }
   .home-photo img { width: 150px !important; height: 188px !important; }
 }
+
+/* ===== research-question image larger ===== */
+.paper-question img { max-width: 720px; }
+.paper-question p { max-width: 720px; }
