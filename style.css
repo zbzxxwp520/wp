@@ -635,3 +635,7 @@ nav ul { z-index: 200; }
 /* ===== research-question image larger ===== */
 .paper-question img { max-width: 720px; }
 .paper-question p { max-width: 720px; }
+
+/* ===== research-question image 900px ===== */
+.paper-question img { max-width: 900px; }
+.paper-question p { max-width: 900px; }
