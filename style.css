@@ -642,3 +642,6 @@ nav ul { z-index: 200; }
 
 /* ===== research-question caption note ===== */
 .paper-question .pq-note { font-size: 0.8rem; font-style: italic; color: var(--muted); margin-top: 0.4rem; }
+
+/* ===== research sword up 2px ===== */
+.page-content h2::after { bottom: -27px; }
