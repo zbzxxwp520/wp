@@ -80,6 +80,13 @@ function langSpans(map) {
   }).join('');
 }
 
+// the notice itself is shown in all five languages at once, not switched
+function noticeLines() {
+  return LANGS.map(function (l) {
+    return '<p class="notice-line" lang="' + (l === 'tw' ? 'zh-Hant' : l === 'zh' ? 'zh-Hans' : l) + '">' + NOTICE_BODY[l] + '</p>';
+  }).join('');
+}
+
 function noticeMuted() {
   try {
     var t = parseInt(localStorage.getItem(NOTICE_KEY) || '0', 10);
@@ -99,7 +106,7 @@ function showNotice() {
   overlay.className = 'notice-overlay';
   overlay.innerHTML =
     '<div class="notice-box" role="dialog" aria-modal="true" aria-label="Notice">' +
-      '<p class="notice-text">' + langSpans(NOTICE_BODY) + '</p>' +
+      '<div class="notice-text">' + noticeLines() + '</div>' +
       '<p class="notice-mail"><a href="mailto:' + mail + '">' + mail + '</a></p>' +
       '<div class="notice-actions">' +
         '<button type="button" class="notice-mute">' + langSpans(NOTICE_MUTE) + '</button>' +

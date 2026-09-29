@@ -698,16 +698,22 @@ nav ul { z-index: 200; }
   border: 1px solid var(--border);
   border-top: 3px solid var(--accent);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
-  max-width: 460px;
+  max-width: 520px;
   width: 100%;
+  max-height: 82vh;
+  overflow-y: auto;
   padding: 1.6rem 1.7rem 1.2rem;
 }
-.notice-text {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.8;
+.notice-text { margin: 0; }
+.notice-line {
+  margin: 0 0 0.55rem;
+  padding-left: 0.7rem;
+  border-left: 2px solid var(--border);
+  font-size: 0.9rem;
+  line-height: 1.65;
   color: var(--ink);
 }
+.notice-line:last-child { margin-bottom: 0; }
 .notice-mail { margin: 0.8rem 0 0; font-size: 0.9rem; }
 .notice-mail a { color: var(--accent); }
 .notice-actions {
