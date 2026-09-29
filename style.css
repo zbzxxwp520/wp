@@ -199,8 +199,7 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
 /* ===== profile link buttons under the photo ===== */
 .profile-links {
   display: flex;
-  justify-content: center;
-  gap: 0.55rem;
+  justify-content: space-between;
   width: 200px;
   margin-top: 0.75rem;
 }
@@ -208,8 +207,8 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border: 1px solid var(--border);
   border-radius: 50%;
   background: var(--white);
@@ -224,12 +223,13 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
   background: var(--light);
   text-decoration: none;
 }
-.profile-links svg { width: 19px; height: 19px; fill: currentColor; display: block; }
-.profile-links svg.pl-cv { width: 21px; height: 21px; }
+.profile-links svg { width: 23px; height: 23px; fill: currentColor; display: block; }
+.profile-links svg.pl-cv { width: 25px; height: 25px; }
 @media (max-width: 680px) {
-  .profile-links { width: 150px; gap: 0.3rem; margin-top: 0.6rem; }
-  .profile-links a { width: 32px; height: 32px; }
-  .profile-links svg { width: 17px; height: 17px; }
+  .profile-links { width: 150px; margin-top: 0.6rem; }
+  .profile-links a { width: 34px; height: 34px; }
+  .profile-links svg { width: 18px; height: 18px; }
+  .profile-links svg.pl-cv { width: 20px; height: 20px; }
 }
 
 /* replace placeholder with real image: */
