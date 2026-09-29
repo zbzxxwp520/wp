@@ -681,3 +681,55 @@ nav ul { z-index: 200; }
 
 /* ===== research sword up 2px ===== */
 .page-content h2::after { bottom: -27px; }
+
+/* ===== away-notice modal ===== */
+.notice-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 26, 26, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 500;
+}
+.notice-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
+  max-width: 460px;
+  width: 100%;
+  padding: 1.6rem 1.7rem 1.2rem;
+}
+.notice-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--ink);
+}
+.notice-mail { margin: 0.8rem 0 0; font-size: 0.9rem; }
+.notice-mail a { color: var(--accent); }
+.notice-actions {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: flex-end;
+  margin-top: 1.4rem;
+}
+.notice-actions button {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  padding: 0.45rem 0.95rem;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--muted);
+  cursor: pointer;
+  transition: color .18s ease, border-color .18s ease, background .18s ease;
+}
+.notice-actions button:hover { color: var(--accent); border-color: var(--accent); background: var(--light); }
+.notice-actions .notice-close { background: var(--accent); border-color: var(--accent); color: var(--white); }
+.notice-actions .notice-close:hover { background: #633025; border-color: #633025; color: var(--white); }
+@media (max-width: 680px) {
+  .notice-box { padding: 1.3rem 1.2rem 1.1rem; }
+  .notice-actions button { flex: 1; }
+}
