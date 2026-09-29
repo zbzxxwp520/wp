@@ -226,7 +226,7 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
 }
 .profile-links svg { width: 19px; height: 19px; fill: currentColor; display: block; }
 @media (max-width: 680px) {
-  .profile-links { width: 150px; gap: 0.4rem; margin-top: 0.6rem; }
+  .profile-links { width: 150px; gap: 0.3rem; margin-top: 0.6rem; }
   .profile-links a { width: 32px; height: 32px; }
   .profile-links svg { width: 17px; height: 17px; }
 }
