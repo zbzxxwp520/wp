@@ -196,42 +196,6 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
   font-family: var(--font-sans);
 }
 
-/* ===== profile link buttons under the photo ===== */
-.profile-links {
-  display: flex;
-  justify-content: space-between;
-  width: 200px;
-  margin-top: 0.75rem;
-}
-.profile-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  background: var(--white);
-  color: var(--muted);
-  text-decoration: none;
-  transition: color .18s ease, border-color .18s ease, background .18s ease;
-}
-.profile-links a:hover,
-.profile-links a:focus-visible {
-  color: var(--accent);
-  border-color: var(--accent);
-  background: var(--light);
-  text-decoration: none;
-}
-.profile-links svg { width: 23px; height: 23px; fill: currentColor; display: block; }
-.profile-links svg.pl-cv { width: 25px; height: 25px; }
-@media (max-width: 680px) {
-  .profile-links { width: 150px; margin-top: 0.6rem; }
-  .profile-links a { width: 34px; height: 34px; }
-  .profile-links svg { width: 18px; height: 18px; }
-  .profile-links svg.pl-cv { width: 20px; height: 20px; }
-}
-
 /* replace placeholder with real image: */
 /* .home-photo img { width: 200px; display: block; border: 1px solid var(--border); } */
 
