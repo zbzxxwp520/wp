@@ -167,7 +167,6 @@ body.lang-zh .en, body.lang-zh .tw, body.lang-zh .ko, body.lang-zh .ja { display
 body.lang-tw .en, body.lang-tw .zh, body.lang-tw .ko, body.lang-tw .ja { display: none !important; }
 body.lang-ko .en, body.lang-ko .zh, body.lang-ko .tw, body.lang-ko .ja { display: none !important; }
 body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display: none !important; }
-.lang-zh .venue, .lang-tw .venue, .lang-ko .venue, .lang-ja .venue { font-style: normal; }
 
 /* =============================================
    HOME LAYOUT
