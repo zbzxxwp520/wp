@@ -735,8 +735,7 @@ a.veiled:hover { cursor: pointer; text-decoration: none; }
 .veiled::-moz-selection { color: var(--accent); background: var(--light); }
 
 /* the easter egg speaks up once it is found */
-.veiled:target::after,
-.veiled:hover::after {
+.veiled-tip:hover::after {
   content: "恭喜你，寻找到了传说中的隐藏研究彩蛋!!!\A这是 QJE level 的长期项目!!!";
   white-space: pre;
   position: absolute;
