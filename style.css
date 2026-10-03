@@ -702,3 +702,13 @@ nav ul { z-index: 200; }
   .notice-box { padding: 1.3rem 1.2rem 1.1rem; }
   .notice-actions button { flex: 1; }
 }
+
+/* ===== veiled research interest: invisible until the mouse presses or selects it ===== */
+.veiled {
+  color: transparent;
+  cursor: default;
+  -webkit-tap-highlight-color: transparent;
+}
+.veiled:active { color: var(--muted); }
+.veiled::selection { color: var(--accent); background: var(--light); }
+.veiled::-moz-selection { color: var(--accent); background: var(--light); }
