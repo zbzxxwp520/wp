@@ -703,12 +703,18 @@ nav ul { z-index: 200; }
   .notice-actions button { flex: 1; }
 }
 
-/* ===== veiled research interest: invisible until the mouse presses or selects it ===== */
+/* ===== veiled research interest: invisible until hovered, then a left-to-right gradient ===== */
 .veiled {
   color: transparent;
   cursor: default;
   -webkit-tap-highlight-color: transparent;
 }
-.veiled:active { color: var(--muted); }
+.veiled:hover {
+  background-image: linear-gradient(90deg, #c0392b, #e67e22, #27ae60, #2980b9, #8e44ad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
 .veiled::selection { color: var(--accent); background: var(--light); }
 .veiled::-moz-selection { color: var(--accent); background: var(--light); }
