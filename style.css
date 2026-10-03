@@ -705,6 +705,7 @@ nav ul { z-index: 200; }
 
 /* ===== veiled research interest: invisible until hovered, then a left-to-right gradient ===== */
 .veiled {
+  position: relative;
   color: transparent;
   cursor: default;
   text-decoration: none;
@@ -732,3 +733,30 @@ a.veiled:hover { cursor: pointer; text-decoration: none; }
 }
 .veiled::selection { color: var(--accent); background: var(--light); }
 .veiled::-moz-selection { color: var(--accent); background: var(--light); }
+
+/* the easter egg speaks up once it is found */
+.veiled:target::after,
+.veiled:hover::after {
+  content: "恭喜你，寻找到了传说中的隐藏研究彩蛋!!!\A这是 QJE level 的长期项目!!!";
+  white-space: pre;
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%);
+  background: var(--ink);
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 0.55rem 0.9rem;
+  border-radius: 4px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.28);
+  background-image: none;
+  animation: none;
+  pointer-events: none;
+  z-index: 300;
+}
