@@ -736,9 +736,8 @@ a.veiled:hover { cursor: pointer; text-decoration: none; }
 
 /* the easter egg speaks up once it is found */
 .veiled-tip:hover::after {
-  content: "Congratulations, you have found the legendary hidden research easter egg!!!\AThis is a QJE level long term project!!!";
-  white-space: pre-line;
-  max-width: min(86vw, 430px);
+  content: "Congratulations, you found the legendary hidden research easter egg!\AThis is a QJE level long term project!!!";
+  white-space: pre;
   position: absolute;
   left: 50%;
   bottom: calc(100% + 10px);
@@ -760,7 +759,10 @@ a.veiled:hover { cursor: pointer; text-decoration: none; }
   pointer-events: none;
   z-index: 300;
 }
-body.lang-zh .veiled-tip:hover::after { content: "恭喜你，寻找到了传说中的隐藏研究彩蛋!!!\A这是 QJE level 的长期项目!!!"; }
-body.lang-tw .veiled-tip:hover::after { content: "恭喜你，尋找到了傳說中的隱藏研究彩蛋!!!\A這是 QJE level 的長期計畫!!!"; }
-body.lang-ko .veiled-tip:hover::after { content: "축하합니다, 전설의 숨겨진 연구 이스터에그를 찾았습니다!!!\A이것은 QJE level 장기 프로젝트입니다!!!"; }
-body.lang-ja .veiled-tip:hover::after { content: "おめでとうございます、伝説の隠し研究イースターエッグを見つけました!!!\Aこれは QJE level の長期プロジェクトです!!!"; }
+body.lang-zh .veiled-tip:hover::after { content: "恭喜你，寻找到了传说中的隐藏研究彩蛋!\A这是 QJE level 的长期项目!!!"; }
+body.lang-tw .veiled-tip:hover::after { content: "恭喜你，尋找到了傳說中的隱藏研究彩蛋!\A這是 QJE level 的長期計畫!!!"; }
+body.lang-ko .veiled-tip:hover::after { content: "축하합니다, 전설의 숨겨진 연구 이스터에그를 찾았습니다!\A이것은 QJE level 장기 프로젝트입니다!!!"; }
+body.lang-ja .veiled-tip:hover::after { content: "おめでとうございます、伝説の隠し研究イースターエッグを発見!\Aこれは QJE level の長期プロジェクトです!!!"; }
+@media (max-width: 680px) {
+  .veiled-tip:hover::after { font-size: 0.62rem; padding: 0.45rem 0.7rem; }
+}
