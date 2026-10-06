@@ -343,12 +343,12 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
     font-size: 1.7rem;
   }
 }
-.pub-cover { flex: 0 0 84px; width: 84px; }
-.pub-cover img { width: 100%; height: 100%; object-fit: cover; display: block; border: 1px solid var(--border); }
+.pub-cover { flex: 0 0 101px; width: 101px; align-self: flex-start; }
+.pub-cover img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; display: block; border: 1px solid var(--border); }
 .pub-body { flex: 1 1 auto; min-width: 0; }
 @media (max-width: 680px) {
   .paper-item.pub .pub-row { gap: 0.9rem; }
-  .pub-cover { flex-basis: 66px; width: 66px; }
+  .pub-cover { flex-basis: 79px; width: 79px; }
 }
 
 .paper-abstract {
