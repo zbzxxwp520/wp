@@ -346,6 +346,12 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
 .pub-cover { flex: 0 0 101px; width: 101px; align-self: flex-start; }
 .pub-cover img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; display: block; border: 1px solid var(--border); }
 .pub-body { flex: 1 1 auto; min-width: 0; }
+
+/* published entry: text scaled with the cover, 20% up from the list defaults */
+.paper-item.pub .paper-title { font-size: 1.32rem; }
+.paper-item.pub .paper-meta { font-size: 1.02rem; }
+.paper-item.pub .paper-links a,
+.paper-item.pub .btn-abstract { font-size: 0.96rem; padding: 0.3rem 0.72rem; }
 @media (max-width: 680px) {
   .paper-item.pub .pub-row { gap: 0.9rem; }
   .pub-cover { flex-basis: 79px; width: 79px; }
