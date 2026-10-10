@@ -167,6 +167,7 @@ body.lang-zh .en, body.lang-zh .tw, body.lang-zh .ko, body.lang-zh .ja { display
 body.lang-tw .en, body.lang-tw .zh, body.lang-tw .ko, body.lang-tw .ja { display: none !important; }
 body.lang-ko .en, body.lang-ko .zh, body.lang-ko .tw, body.lang-ko .ja { display: none !important; }
 body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display: none !important; }
+.lang-zh .venue, .lang-tw .venue, .lang-ko .venue, .lang-ja .venue { font-style: normal; }
 
 /* =============================================
    HOME LAYOUT
@@ -343,12 +344,12 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
     font-size: 1.7rem;
   }
 }
-.pub-cover { flex: 0 0 101px; width: 101px; align-self: flex-start; }
-.pub-cover img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; display: block; border: 1px solid var(--border); }
+.pub-cover { flex: 0 0 84px; width: 84px; }
+.pub-cover img { width: 100%; height: 100%; object-fit: cover; display: block; border: 1px solid var(--border); }
 .pub-body { flex: 1 1 auto; min-width: 0; }
 @media (max-width: 680px) {
   .paper-item.pub .pub-row { gap: 0.9rem; }
-  .pub-cover { flex-basis: 79px; width: 79px; }
+  .pub-cover { flex-basis: 66px; width: 66px; }
 }
 
 .paper-abstract {
@@ -461,7 +462,7 @@ footer {
 }
 
 /* =============================================================
-   青竹小轩 ORNAMENTS — appended 2026-08-08
+   青竹小轩 ORNAMENTS — appended 2026-08-09
    All decorative layers are pointer-events:none, opacity ≤ 0.12.
    Needs scholar-bg.png + scholar-vase.png next to this file.
    No HTML or nav.js changes required.
@@ -501,7 +502,7 @@ body::after {
 /* 青竹蜂云剑 — one large + one small, under every h2 rule */
 .page-content h2 { position:relative; }
 .page-content h2::after {
-  content:""; position:absolute; right:0; bottom:-29px; width:356px; height:66px;
+  content:""; position:absolute; right:0; bottom:-29px; width:340px; height:66px;
   opacity:0.12; pointer-events:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='66' viewBox='0 0 340 66'%3E%3Cg fill='none' stroke='%237a3b2e' stroke-width='2' stroke-linejoin='round'%3E%3Cg transform='translate(20 1)'%3E%3Cpath d='M4 18C18 14.4 28 12.2 40 11L220 8v20L40 25C28 23.8 18 21.6 4 18z'/%3E%3Cpath d='M40 13.5L216 10.6M40 22.5L216 25.4' stroke-dasharray='2.4 2.6' stroke-width='1.6'/%3E%3Cpath d='M12 18C17 17.2 24 16.6 32.5 16.1C37.2 16.7 42 16.7 46.7 15.8C52 16.5 57.2 16.5 62.5 15.5C68.3 16.3 74.2 16.3 80 15.2C86 16.1 93.2 16.1 99.2 14.9C105.2 15.9 114 15.9 120 14.6C126 15.7 136.5 15.7 142.5 14.3C148.5 15.5 160.7 15.5 166.7 14.0C172.7 15.3 186.5 15.3 192.5 13.7C198.5 15.1 214 15.1 220 13.4' stroke-width='1.6'/%3E%3Cpath d='M12 18C17 18.8 24 19.4 32.5 19.9C37.2 19.3 42 19.3 46.7 20.2C52 19.5 57.2 19.5 62.5 20.5C68.3 19.7 74.2 19.7 80 20.8C86 19.9 93.2 19.9 99.2 21.1C105.2 20.1 114 20.1 120 21.4C126 20.3 136.5 20.3 142.5 21.7C148.5 20.5 160.7 20.5 166.7 22.0C172.7 20.7 186.5 20.7 192.5 22.3C198.5 20.9 214 20.9 220 22.6' stroke-width='1.6'/%3E%3Cpath d='M32.5 16.1v3.8M46.7 15.8v4.4M62.5 15.5v5.0M80 15.2v5.6M99.2 14.9v6.2M120 14.6v6.8M142.5 14.3v7.4M166.7 14.0v8.0M192.5 13.7v8.6M220 13.4v9.2' stroke-width='1.6'/%3E%3Cpath d='M220 8v20'/%3E%3Cpath d='M220 8c6 5 10 5 16-4M220 28c6-5 10-5 16 4'/%3E%3Cpath d='M223 9.5c4 3.5 7 3.5 10-2M223 26.5c4-3.5 7-3.5 10 2' stroke-width='1.4'/%3E%3Crect x='236' y='-0.7' width='6.8' height='37.4' rx='3'/%3E%3Cpath d='M237 0.5l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2M241.8 0.5l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2' stroke-width='1'/%3E%3Cpath d='M242.8 12.9h52v10.2h-52z'/%3E%3Cpath d='M246.8 12.9v10.2M250.8 12.9v10.2M254.8 12.9v10.2M258.8 12.9v10.2M262.8 12.9v10.2M276.8 12.9v10.2M280.8 12.9v10.2M284.8 12.9v10.2M288.8 12.9v10.2' stroke-width='1'/%3E%3Cpath d='M268.8 11.9v12.2M271.8 11.9v12.2' stroke-width='1.4'/%3E%3Cpath d='M243.8 24.5c9-12 20-17 31-16-9 12-20 17-31 16z'/%3E%3Cpath d='M248.8 23.5c6-7 13-10 19-10'/%3E%3Cpath d='M272.8 11.5c7 10 16 14 25 13-7-10-16-15-25-13z'/%3E%3Cpath d='M276.8 12.5c4 6 10 9 16 9'/%3E%3Cpath d='M294.8 14h4v8h-4z'/%3E%3Cpath d='M298.8 13c4 0 7-1.6 10-5M298.8 23c4 0 7 1.6 10 5'/%3E%3Cpath d='M308.8 8h4v20h-4z'/%3E%3Cpath d='M300.8 14c2 1.4 4 2.6 6 3.4M300.8 22c2-1.4 4-2.6 6-3.4' stroke-width='1.4'/%3E%3C/g%3E%3Cg transform='translate(0 41) scale(0.5)'%3E%3Cpath d='M4 18C18 14.4 28 12.2 40 11L220 8v20L40 25C28 23.8 18 21.6 4 18z'/%3E%3Cpath d='M40 13.5L216 10.6M40 22.5L216 25.4' stroke-dasharray='2.4 2.6' stroke-width='1.6'/%3E%3Cpath d='M12 18C17 17.2 24 16.6 32.5 16.1C37.2 16.7 42 16.7 46.7 15.8C52 16.5 57.2 16.5 62.5 15.5C68.3 16.3 74.2 16.3 80 15.2C86 16.1 93.2 16.1 99.2 14.9C105.2 15.9 114 15.9 120 14.6C126 15.7 136.5 15.7 142.5 14.3C148.5 15.5 160.7 15.5 166.7 14.0C172.7 15.3 186.5 15.3 192.5 13.7C198.5 15.1 214 15.1 220 13.4' stroke-width='1.6'/%3E%3Cpath d='M12 18C17 18.8 24 19.4 32.5 19.9C37.2 19.3 42 19.3 46.7 20.2C52 19.5 57.2 19.5 62.5 20.5C68.3 19.7 74.2 19.7 80 20.8C86 19.9 93.2 19.9 99.2 21.1C105.2 20.1 114 20.1 120 21.4C126 20.3 136.5 20.3 142.5 21.7C148.5 20.5 160.7 20.5 166.7 22.0C172.7 20.7 186.5 20.7 192.5 22.3C198.5 20.9 214 20.9 220 22.6' stroke-width='1.6'/%3E%3Cpath d='M32.5 16.1v3.8M46.7 15.8v4.4M62.5 15.5v5.0M80 15.2v5.6M99.2 14.9v6.2M120 14.6v6.8M142.5 14.3v7.4M166.7 14.0v8.0M192.5 13.7v8.6M220 13.4v9.2' stroke-width='1.6'/%3E%3Cpath d='M220 8v20'/%3E%3Cpath d='M220 8c6 5 10 5 16-4M220 28c6-5 10-5 16 4'/%3E%3Cpath d='M223 9.5c4 3.5 7 3.5 10-2M223 26.5c4-3.5 7-3.5 10 2' stroke-width='1.4'/%3E%3Crect x='236' y='-0.7' width='6.8' height='37.4' rx='3'/%3E%3Cpath d='M237 0.5l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2M241.8 0.5l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2' stroke-width='1'/%3E%3Cpath d='M242.8 12.9h52v10.2h-52z'/%3E%3Cpath d='M246.8 12.9v10.2M250.8 12.9v10.2M254.8 12.9v10.2M258.8 12.9v10.2M262.8 12.9v10.2M276.8 12.9v10.2M280.8 12.9v10.2M284.8 12.9v10.2M288.8 12.9v10.2' stroke-width='1'/%3E%3Cpath d='M268.8 11.9v12.2M271.8 11.9v12.2' stroke-width='1.4'/%3E%3Cpath d='M243.8 24.5c9-12 20-17 31-16-9 12-20 17-31 16z'/%3E%3Cpath d='M248.8 23.5c6-7 13-10 19-10'/%3E%3Cpath d='M272.8 11.5c7 10 16 14 25 13-7-10-16-15-25-13z'/%3E%3Cpath d='M276.8 12.5c4 6 10 9 16 9'/%3E%3Cpath d='M294.8 14h4v8h-4z'/%3E%3Cpath d='M298.8 13c4 0 7-1.6 10-5M298.8 23c4 0 7 1.6 10 5'/%3E%3Cpath d='M308.8 8h4v20h-4z'/%3E%3Cpath d='M300.8 14c2 1.4 4 2.6 6 3.4M300.8 22c2-1.4 4-2.6 6-3.4' stroke-width='1.4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-repeat:no-repeat;
@@ -517,252 +518,5 @@ main > * { position:relative; z-index:1; }
 /* ornaments — small screens */
 @media (max-width: 680px) {
   body::after { display: none; }
-  .page-content h2::after { width:200px; height:38px; bottom:-19px; background-size:200px 38px; }
-}
-
-/* ===== tweaks: vase nearer content; CV swords on the Download row ===== */
-body::after { left: max(1.2rem, calc((100vw - 1055px) / 2 - 96px)); }
-@media (min-width:1300px) { body::after { left: max(1.2rem, calc((100vw - 1055px) / 2 - 96px)); } }
-.cv-page.page-content h2::after { display: none; }
-.cv-head { position: relative; }
-.cv-head::after {
-  content:""; position:absolute; right:0; bottom:-29px; width:356px; height:66px;
-  opacity:0.12; pointer-events:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='66' viewBox='0 0 340 66'%3E%3Cg fill='none' stroke='%237a3b2e' stroke-width='2' stroke-linejoin='round'%3E%3Cg transform='translate(20 1)'%3E%3Cpath d='M4 18C18 14.4 28 12.2 40 11L220 8v20L40 25C28 23.8 18 21.6 4 18z'/%3E%3Cpath d='M40 13.5L216 10.6M40 22.5L216 25.4' stroke-dasharray='2.4 2.6' stroke-width='1.6'/%3E%3Cpath d='M12 18C17 17.2 24 16.6 32.5 16.1C37.2 16.7 42 16.7 46.7 15.8C52 16.5 57.2 16.5 62.5 15.5C68.3 16.3 74.2 16.3 80 15.2C86 16.1 93.2 16.1 99.2 14.9C105.2 15.9 114 15.9 120 14.6C126 15.7 136.5 15.7 142.5 14.3C148.5 15.5 160.7 15.5 166.7 14.0C172.7 15.3 186.5 15.3 192.5 13.7C198.5 15.1 214 15.1 220 13.4' stroke-width='1.6'/%3E%3Cpath d='M12 18C17 18.8 24 19.4 32.5 19.9C37.2 19.3 42 19.3 46.7 20.2C52 19.5 57.2 19.5 62.5 20.5C68.3 19.7 74.2 19.7 80 20.8C86 19.9 93.2 19.9 99.2 21.1C105.2 20.1 114 20.1 120 21.4C126 20.3 136.5 20.3 142.5 21.7C148.5 20.5 160.7 20.5 166.7 22.0C172.7 20.7 186.5 20.7 192.5 22.3C198.5 20.9 214 20.9 220 22.6' stroke-width='1.6'/%3E%3Cpath d='M32.5 16.1v3.8M46.7 15.8v4.4M62.5 15.5v5.0M80 15.2v5.6M99.2 14.9v6.2M120 14.6v6.8M142.5 14.3v7.4M166.7 14.0v8.0M192.5 13.7v8.6M220 13.4v9.2' stroke-width='1.6'/%3E%3Cpath d='M220 8v20'/%3E%3Cpath d='M220 8c6 5 10 5 16-4M220 28c6-5 10-5 16 4'/%3E%3Cpath d='M223 9.5c4 3.5 7 3.5 10-2M223 26.5c4-3.5 7-3.5 10 2' stroke-width='1.4'/%3E%3Crect x='236' y='-0.7' width='6.8' height='37.4' rx='3'/%3E%3Cpath d='M237 0.5l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2M241.8 0.5l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2' stroke-width='1'/%3E%3Cpath d='M242.8 12.9h52v10.2h-52z'/%3E%3Cpath d='M246.8 12.9v10.2M250.8 12.9v10.2M254.8 12.9v10.2M258.8 12.9v10.2M262.8 12.9v10.2M276.8 12.9v10.2M280.8 12.9v10.2M284.8 12.9v10.2M288.8 12.9v10.2' stroke-width='1'/%3E%3Cpath d='M268.8 11.9v12.2M271.8 11.9v12.2' stroke-width='1.4'/%3E%3Cpath d='M243.8 24.5c9-12 20-17 31-16-9 12-20 17-31 16z'/%3E%3Cpath d='M248.8 23.5c6-7 13-10 19-10'/%3E%3Cpath d='M272.8 11.5c7 10 16 14 25 13-7-10-16-15-25-13z'/%3E%3Cpath d='M276.8 12.5c4 6 10 9 16 9'/%3E%3Cpath d='M294.8 14h4v8h-4z'/%3E%3Cpath d='M298.8 13c4 0 7-1.6 10-5M298.8 23c4 0 7 1.6 10 5'/%3E%3Cpath d='M308.8 8h4v20h-4z'/%3E%3Cpath d='M300.8 14c2 1.4 4 2.6 6 3.4M300.8 22c2-1.4 4-2.6 6-3.4' stroke-width='1.4'/%3E%3C/g%3E%3Cg transform='translate(0 41) scale(0.5)'%3E%3Cpath d='M4 18C18 14.4 28 12.2 40 11L220 8v20L40 25C28 23.8 18 21.6 4 18z'/%3E%3Cpath d='M40 13.5L216 10.6M40 22.5L216 25.4' stroke-dasharray='2.4 2.6' stroke-width='1.6'/%3E%3Cpath d='M12 18C17 17.2 24 16.6 32.5 16.1C37.2 16.7 42 16.7 46.7 15.8C52 16.5 57.2 16.5 62.5 15.5C68.3 16.3 74.2 16.3 80 15.2C86 16.1 93.2 16.1 99.2 14.9C105.2 15.9 114 15.9 120 14.6C126 15.7 136.5 15.7 142.5 14.3C148.5 15.5 160.7 15.5 166.7 14.0C172.7 15.3 186.5 15.3 192.5 13.7C198.5 15.1 214 15.1 220 13.4' stroke-width='1.6'/%3E%3Cpath d='M12 18C17 18.8 24 19.4 32.5 19.9C37.2 19.3 42 19.3 46.7 20.2C52 19.5 57.2 19.5 62.5 20.5C68.3 19.7 74.2 19.7 80 20.8C86 19.9 93.2 19.9 99.2 21.1C105.2 20.1 114 20.1 120 21.4C126 20.3 136.5 20.3 142.5 21.7C148.5 20.5 160.7 20.5 166.7 22.0C172.7 20.7 186.5 20.7 192.5 22.3C198.5 20.9 214 20.9 220 22.6' stroke-width='1.6'/%3E%3Cpath d='M32.5 16.1v3.8M46.7 15.8v4.4M62.5 15.5v5.0M80 15.2v5.6M99.2 14.9v6.2M120 14.6v6.8M142.5 14.3v7.4M166.7 14.0v8.0M192.5 13.7v8.6M220 13.4v9.2' stroke-width='1.6'/%3E%3Cpath d='M220 8v20'/%3E%3Cpath d='M220 8c6 5 10 5 16-4M220 28c6-5 10-5 16 4'/%3E%3Cpath d='M223 9.5c4 3.5 7 3.5 10-2M223 26.5c4-3.5 7-3.5 10 2' stroke-width='1.4'/%3E%3Crect x='236' y='-0.7' width='6.8' height='37.4' rx='3'/%3E%3Cpath d='M237 0.5l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2M241.8 0.5l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2l4.8 5.2l-4.8 5.2' stroke-width='1'/%3E%3Cpath d='M242.8 12.9h52v10.2h-52z'/%3E%3Cpath d='M246.8 12.9v10.2M250.8 12.9v10.2M254.8 12.9v10.2M258.8 12.9v10.2M262.8 12.9v10.2M276.8 12.9v10.2M280.8 12.9v10.2M284.8 12.9v10.2M288.8 12.9v10.2' stroke-width='1'/%3E%3Cpath d='M268.8 11.9v12.2M271.8 11.9v12.2' stroke-width='1.4'/%3E%3Cpath d='M243.8 24.5c9-12 20-17 31-16-9 12-20 17-31 16z'/%3E%3Cpath d='M248.8 23.5c6-7 13-10 19-10'/%3E%3Cpath d='M272.8 11.5c7 10 16 14 25 13-7-10-16-15-25-13z'/%3E%3Cpath d='M276.8 12.5c4 6 10 9 16 9'/%3E%3Cpath d='M294.8 14h4v8h-4z'/%3E%3Cpath d='M298.8 13c4 0 7-1.6 10-5M298.8 23c4 0 7 1.6 10 5'/%3E%3Cpath d='M308.8 8h4v20h-4z'/%3E%3Cpath d='M300.8 14c2 1.4 4 2.6 6 3.4M300.8 22c2-1.4 4-2.6 6-3.4' stroke-width='1.4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); background-repeat:no-repeat;
-}
-@media (max-width:680px) {
-  .cv-head::after { width:200px; height:38px; bottom:-19px; background-size:200px 38px; }
-}
-
-/* ===== tweaks v2: smaller vase, raised; CV swords to the right of Download ===== */
-body::after {
-  left: max(1.2rem, calc((100vw - 1055px) / 2 - 78px));
-  bottom: 22vh; top: auto; width: 56px; height: 93px;
-}
-@media (min-width:1300px) {
-  body::after {
-    left: max(1.2rem, calc((100vw - 1055px) / 2 - 78px));
-    bottom: 24vh; top: auto; width: 64px; height: 107px;
-  }
-}
-.cv-head::after {
-  right: auto; left: 100%; margin-left: 14px;
-  top: 50%; bottom: auto; transform: translateY(-50%);
-  width: 240px; height: 45px; background-size: 240px 45px;
-}
-@media (max-width:680px) {
-  .cv-head::after { display: none; }
-}
-
-/* ===== tweaks v3: vase back down (not raised) ===== */
-body::after { bottom: 2vh; top: auto; }
-@media (min-width:1300px) { body::after { bottom: 2vh; top: auto; } }
-
-/* ===== tweaks v4: vase mid height ===== */
-body::after { bottom: 12vh; top: auto; }
-@media (min-width:1300px) { body::after { bottom: 12vh; top: auto; } }
-
-/* ===== tweaks v5: vase scrolls with page (absolute, like the swords) ===== */
-body { position: relative; }
-body::after { position: absolute; top: 78vh; bottom: auto; }
-@media (min-width:1300px) { body::after { position: absolute; top: 76vh; bottom: auto; } }
-
-/* ===== tweaks v6: vase pinned to the left of Email / 应天兆 / CV preview ===== */
-body::after { display: none; }
-.vase-anchor { position: relative; }
-.vase-anchor::before {
-  content:""; position:absolute; left:-84px; top:0;
-  width:64px; height:107px; opacity:0.12; pointer-events:none; z-index:0;
-  background-image:url("scholar-vase.png"); background-repeat:no-repeat; background-size:contain;
-}
-@media (max-width:680px) { .vase-anchor::before { display:none; } }
-
-/* ===== tweaks v7: per-anchor vertical nudge ===== */
-.paper-item.vase-anchor::before { top: -2px; }
-.cv-frame.vase-anchor::before { top: 40px; }
-
-/* ===== tweaks v8: CV vase lower ===== */
-.cv-frame.vase-anchor::before { top: 60px; }
-
-/* ===== tweaks v9: CV vase lower again ===== */
-.cv-frame.vase-anchor::before { top: 80px; }
-
-/* ===== tweaks v10: CV vase visible (was off-screen left) ===== */
-.cv-frame.vase-anchor::before { top: 80px; left: -50px; z-index: 2; }
-
-/* ===== tweaks v11: CV vase left5 down20; research vase up3 ===== */
-.cv-frame.vase-anchor::before { top: 100px; left: -55px; }
-.paper-item.vase-anchor::before { top: -5px; }
-
-/* ===== tweaks v12: vase nudge + fix mobile nav above photo ===== */
-.cv-frame.vase-anchor::before { top: 120px; left: -60px; }
-.paper-item.vase-anchor::before { top: -8px; }
-nav { position: sticky; top: 0; z-index: 100; }
-
-/* ===== tweaks v13: CV left5 down20; research up3 ===== */
-.cv-frame.vase-anchor::before { top: 140px; left: -65px; }
-.paper-item.vase-anchor::before { top: -11px; }
-
-/* ===== tweaks v14: CV left5; research up5 ===== */
-.cv-frame.vase-anchor::before { top: 140px; left: -70px; }
-.paper-item.vase-anchor::before { top: -16px; }
-
-/* ===== tweaks v15: research vase up 10px ===== */
-.paper-item.vase-anchor::before { top: -26px; }
-
-/* ===== tweaks v16: research up3; CV down50 ===== */
-.paper-item.vase-anchor::before { top: -29px; }
-.cv-frame.vase-anchor::before { top: 190px; left: -70px; }
-
-/* ===== tweaks v17: research up3; CV down100 ===== */
-.paper-item.vase-anchor::before { top: -32px; }
-.cv-frame.vase-anchor::before { top: 290px; left: -70px; }
-
-/* ===== tweaks v18: CV down 250 ===== */
-.cv-frame.vase-anchor::before { top: 540px; left: -70px; }
-
-/* ===== tweaks v19: CV vase up100; strengthen mobile nav above photo ===== */
-.cv-frame.vase-anchor::before { top: 440px; left: -70px; }
-nav { z-index: 200; }
-nav ul { z-index: 200; }
-@media (max-width: 680px) {
-  nav { z-index: 200; }
-  nav ul, nav ul.open { z-index: 200; background: var(--white); }
-  .home-photo img { width: 150px !important; height: 188px !important; }
-}
-
-/* ===== research-question image larger ===== */
-.paper-question img { max-width: 720px; }
-.paper-question p { max-width: 720px; }
-
-/* ===== research-question image 900px ===== */
-.paper-question img { max-width: 900px; }
-.paper-question p { max-width: 900px; }
-
-/* ===== research-question caption note ===== */
-.paper-question .pq-note { font-size: 0.8rem; font-style: italic; color: var(--muted); margin-top: 0.4rem; }
-
-/* ===== research sword up 2px ===== */
-.page-content h2::after { bottom: -27px; }
-
-/* ===== away-notice modal ===== */
-.notice-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(26, 26, 26, 0.45);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-  z-index: 500;
-}
-.notice-box {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-top: 3px solid var(--accent);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
-  max-width: 520px;
-  width: 100%;
-  max-height: 82vh;
-  overflow-y: auto;
-  padding: 1.6rem 1.7rem 1.2rem;
-}
-.notice-text { margin: 0; }
-.notice-line {
-  margin: 0 0 0.55rem;
-  padding-left: 0.7rem;
-  border-left: 2px solid var(--border);
-  font-size: 0.9rem;
-  line-height: 1.65;
-  color: var(--ink);
-}
-.notice-line:last-child { margin-bottom: 0; }
-.notice-mail { margin: 0.8rem 0 0; font-size: 0.9rem; }
-.notice-mail a { color: var(--accent); }
-.notice-actions {
-  display: flex;
-  gap: 0.6rem;
-  justify-content: flex-end;
-  margin-top: 1.4rem;
-}
-.notice-actions button {
-  font-family: var(--font-sans);
-  font-size: 0.82rem;
-  padding: 0.45rem 0.95rem;
-  border: 1px solid var(--border);
-  background: var(--white);
-  color: var(--muted);
-  cursor: pointer;
-  transition: color .18s ease, border-color .18s ease, background .18s ease;
-}
-.notice-actions button:hover { color: var(--accent); border-color: var(--accent); background: var(--light); }
-.notice-actions .notice-close { background: var(--accent); border-color: var(--accent); color: var(--white); }
-.notice-actions .notice-close:hover { background: #633025; border-color: #633025; color: var(--white); }
-@media (max-width: 680px) {
-  .notice-box { padding: 1.3rem 1.2rem 1.1rem; }
-  .notice-actions button { flex: 1; }
-}
-
-/* ===== veiled research interest: invisible until hovered, then a left-to-right gradient ===== */
-.veiled {
-  position: relative;
-  color: transparent;
-  cursor: default;
-  text-decoration: none;
-  scroll-margin-top: 90px;
-  -webkit-tap-highlight-color: transparent;
-}
-a.veiled:hover { cursor: pointer; text-decoration: none; }
-.veiled:target,
-.veiled:hover {
-  background-image: linear-gradient(90deg, #c0392b, #e67e22, #27ae60, #2980b9, #8e44ad, #c0392b);
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  animation: veilFlow 2.5s linear infinite;
-}
-@keyframes veilFlow {
-  from { background-position: 200% 50%; }
-  to   { background-position: 0% 50%; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .veiled:target,
-  .veiled:hover { animation: none; }
-}
-.veiled::selection { color: var(--accent); background: var(--light); }
-.veiled::-moz-selection { color: var(--accent); background: var(--light); }
-
-/* the easter egg speaks up once it is found */
-.veiled-tip:hover::after {
-  content: "Congratulations, you found the legendary hidden research easter egg!\AThis is a QJE level long term project!!!";
-  white-space: pre;
-  position: absolute;
-  left: 50%;
-  bottom: calc(100% + 10px);
-  transform: translateX(-50%);
-  background: var(--ink);
-  color: #fff;
-  -webkit-text-fill-color: #fff;
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 0;
-  text-align: center;
-  padding: 0.55rem 0.9rem;
-  border-radius: 4px;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.28);
-  background-image: none;
-  animation: none;
-  pointer-events: none;
-  z-index: 300;
-}
-body.lang-zh .veiled-tip:hover::after { content: "恭喜你，寻找到了传说中的隐藏研究彩蛋!\A这是 QJE level 的长期项目!!!"; }
-body.lang-tw .veiled-tip:hover::after { content: "恭喜你，尋找到了傳說中的隱藏研究彩蛋!\A這是 QJE level 的長期計畫!!!"; }
-body.lang-ko .veiled-tip:hover::after { content: "축하합니다, 전설의 숨겨진 연구 이스터에그를 찾았습니다!\A이것은 QJE level 장기 프로젝트입니다!!!"; }
-body.lang-ja .veiled-tip:hover::after { content: "おめでとうございます、伝説の隠し研究イースターエッグを発見!\Aこれは QJE level の長期プロジェクトです!!!"; }
-@media (max-width: 680px) {
-  .veiled-tip:hover::after { font-size: 0.62rem; padding: 0.45rem 0.7rem; }
+  .page-content h2::after { width:200px; height:39px; bottom:-20px; background-size:200px 39px; }
 }
