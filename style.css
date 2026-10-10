@@ -296,9 +296,7 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
 .paper-item:first-child { border-top: 1px solid var(--border); }
 
 .paper-title .status {
-  font-family: var(--font-sans);
   font-size: 0.85rem;
-  font-weight: 400;
   color: var(--accent);
   white-space: nowrap;
 }
@@ -318,17 +316,21 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
   margin-bottom: 0.5rem;
 }
 
-/* journal names on the research page use the CV's Computer Modern bold italic
-   (CMU Serif, SIL OFL 1.1, self-hosted in fonts/) */
+/* journal names and submission status on the research page use the CV's
+   Computer Modern bold italic (CMU Serif, SIL OFL 1.1, self-hosted in fonts/).
+   The file is the bold-italic face, but it is declared at the normal weight on
+   purpose: CM's hairline strokes read light at 0.85rem, so the 700 request
+   below adds synthetic emboldening on top of the already-bold outlines. */
 @font-face {
   font-family: 'CMU Serif';
   src: url('fonts/CMUSerif-BoldItalic.woff2') format('woff2');
-  font-weight: 700;
+  font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 .paper-meta .venue,
-.paper-meta em {
+.paper-meta em,
+.paper-title .status {
   font-family: 'CMU Serif', var(--font-serif), Georgia, serif;
   font-weight: 700;
   font-style: italic;
