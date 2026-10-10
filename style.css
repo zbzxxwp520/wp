@@ -318,6 +318,22 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
   margin-bottom: 0.5rem;
 }
 
+/* journal names on the research page use the CV's Computer Modern bold italic
+   (CMU Serif, SIL OFL 1.1, self-hosted in fonts/) */
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('fonts/CMUSerif-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+.paper-meta .venue,
+.paper-meta em {
+  font-family: 'CMU Serif', var(--font-serif), Georgia, serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
 .paper-meta .venue { font-style: italic; }
 
 .paper-meta .status { color: var(--accent); }
