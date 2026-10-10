@@ -336,7 +336,10 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
   font-style: italic;
 }
 
-.paper-meta .venue { font-style: italic; }
+/* the CV prints journal names in black; CM's hairlines cover far less of each
+   pixel than DM Sans did, so the inherited --muted grey rendered washed out */
+.paper-meta .venue,
+.paper-meta em { color: var(--ink); }
 
 .paper-meta .status { color: var(--accent); }
 
