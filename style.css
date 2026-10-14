@@ -322,6 +322,37 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
 
 .paper-meta .status { color: var(--accent); }
 
+/* indexing and ranking badges under the journal name; square corners to match
+   the abstract button, but border/muted palette so they do not read as
+   clickable controls sitting above the real ones */
+.journal-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: -0.15rem 0 0.15rem;
+}
+.jx {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--border);
+  font-family: var(--font-sans);
+  font-size: 0.66rem;
+  line-height: 1.65;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.jx-k {
+  padding: 0.08rem 0.36rem;
+  color: var(--muted);
+}
+.jx-v {
+  padding: 0.08rem 0.36rem;
+  background: var(--light);
+  border-left: 1px solid var(--border);
+  color: var(--ink);
+  font-weight: 600;
+}
+
 /* Publication entry with journal cover on the left */
 .paper-item.pub { position: relative; }
 .paper-item.pub .pub-row { display: flex; gap: 1.2rem; align-items: stretch; }
