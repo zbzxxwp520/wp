@@ -336,17 +336,17 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
   align-items: stretch;
   border: 1px solid var(--border);
   font-family: var(--font-sans);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   line-height: 1.65;
   letter-spacing: 0.02em;
   white-space: nowrap;
 }
 .jx-k {
-  padding: 0.14rem 0.46rem;
+  padding: 0.16rem 0.5rem;
   color: var(--muted);
 }
 .jx-v {
-  padding: 0.14rem 0.46rem;
+  padding: 0.16rem 0.5rem;
   background: var(--light);
   border-left: 1px solid var(--border);
   color: var(--ink);
