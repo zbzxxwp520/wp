@@ -13,3 +13,6 @@
 
 # Local-only archives
 *.zip
+
+# Local-only notes and snapshots, never deployed
+_local/
