@@ -376,9 +376,9 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
 }
 .pub-cover { flex: 0 0 101px; width: 101px; align-self: flex-start; }
 .pub-cover img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; display: block; border: 1px solid var(--border); }
-/* the cover is 101px wide at a locked 3:4 ratio plus a 1px border, so its
-   height is exactly calc(101px / 3 * 4 + 2px); the text column is given
-   that as a floor and spreads its four rows to fill it, which keeps the
+/* box-sizing is border-box globally, so the cover's 1px border is already
+   inside its 101px width: total height is exactly 101/3*4. The text column
+   takes that as a floor and spreads its four rows to fill it, keeping the
    two columns flush without hand-tuned margins */
 .pub-body {
   flex: 1 1 auto;
@@ -386,12 +386,12 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: calc(101px / 3 * 4 + 2px);
+  min-height: calc(101px / 3 * 4);
 }
 @media (max-width: 680px) {
   .paper-item.pub .pub-row { gap: 0.9rem; }
   .pub-cover { flex-basis: 79px; width: 79px; }
-  .pub-body { min-height: calc(79px / 3 * 4 + 2px); }
+  .pub-body { min-height: calc(79px / 3 * 4); }
 }
 
 .paper-abstract {
