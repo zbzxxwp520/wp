@@ -350,7 +350,6 @@ body.lang-ja .en, body.lang-ja .zh, body.lang-ja .tw, body.lang-ja .ko { display
   background: var(--light);
   border-left: 1px solid var(--border);
   color: var(--ink);
-  font-weight: 600;
 }
 
 /* Publication entry with journal cover on the left */
